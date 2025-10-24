@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place an Order | Hooked by Bee 🐝💜</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Hooked by Bee Logo">
+    <nav>
+  <a href="index.html">Home</a>
+  <a href="small-animals.html">Small Animals</a>
+  <a href="large-animals.html">Large Animals</a>
+  <a href="baby-items.html">Baby Items</a>
+  <a href="other-items.html">Other Items</a>
+  <a href="about.html">About</a>
+  <a href="order.html">Place Order</a>
+</nav>
+
+  </header>
+
+  <!-- Larger Banner Section -->
+  <div class="banner" style="background-image:url('images/banner.jpg');"></div>
+
+  <!-- Navigation Buttons Below Banner -->
+<div class="page-buttons">
+  <a href="small-animals.html" class="btn">Small Animals</a>
+  <a href="large-animals.html" class="btn">Large Animals</a>
+  <a href="baby-items.html" class="btn">Baby Items</a>
+  <a href="other-items.html" class="btn">Other Items</a>
+  <a href="about.html" class="btn">About</a>
+  <a href="order.html" class="btn">Place Order</a>
+</div>
+
+
+  <!-- Decorative Icons -->
+  <img src="images/icons/bee.png" alt="Bee Icon" class="icon bee-icon">
+  <img src="images/icons/yarn.png" alt="Yarn Icon" class="icon yarn-icon">
+  <img src="images/icons/coffee.png" alt="Coffee Icon" class="icon coffee-icon">
+
+  <div class="container">
+    <h1>Place an Order 🧵🐝</h1>
+    <p class="intro-text">
+      All items are **custom made**, and every piece is crafted with care and love.  
+      You can personalize your order — choose your colors, yarn types, and even small design details.  
+      Once your order is placed, I’ll contact you as soon as possible to confirm and discuss your preferences. 💜
+    </p>
+
+    <div class="order-info">
+      <p>
+        ✨ Please note: Because every item is handmade, processing time varies depending on size and detail.  
+        For large or multiple-item orders, a **deposit** is required to cover materials.  
+        Full payment is due before delivery.  
+        If delivery via courier is needed, you’ll be responsible for **80% of delivery costs**.  
+      </p>
+    </div>
+
+    <!-- Order Form -->
+    <form id="orderForm" class="order-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="contact">Contact Info (Email / Phone):</label>
+      <input type="text" id="contact" name="contact" required>
+
+      <label for="item">Item You Want to Order:</label>
+      <input type="text" id="item" name="item" required>
+
+      <label for="description">Description (Colors, Patterns, Customization):</label>
+      <textarea id="description" name="description" rows="4"></textarea>
+
+      <label for="notes">Other Special Notes:</label>
+      <textarea id="notes" name="notes" rows="3"></textarea>
+
+      <button type="submit" class="btn">Submit Order</button>
+    </form>
+
+    <p id="thankYouMessage" class="thank-you-message" style="display:none;">
+      💜 Thank you so much for your order! I’ll get back to you as soon as I can.  
+      Your support means the world to me 🐝✨
+    </p>
+  </div>
+
+  <footer>
+    <p>© 2025 Hooked by Bee 🐝 | All Rights Reserved</p>
+  </footer>
+
+  <!-- EmailJS Library -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <script>
+    (function(){
+      emailjs.init("Dh8dlXd9DN4Wqeyhn"); // Replace with your actual Public Key
+    })();
+
+    const form = document.getElementById('orderForm');
+    const thankYouMessage = document.getElementById('thankYouMessage');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      emailjs.sendForm('service_jvpyrtj', 'template_nuezkdh', this)
+        .then(() => {
+          form.reset();
+          thankYouMessage.style.display = 'block';
+          window.scrollTo({ top: thankYouMessage.offsetTop - 100, behavior: 'smooth' });
+        }, (error) => {
+          alert('Oops! Something went wrong: ' + JSON.stringify(error));
+        });
+    });
+  </script>
+</body>
+</html>
