@@ -423,3 +423,66 @@ Contact: {{contact}}
 Item: {{item}}
 Description: {{description}}
 Notes: {{notes}}
+
+/* -------------------------
+   Responsive design
+------------------------- */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  header img {
+    width: 80px;             /* smaller logo */
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+
+  .banner-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .page-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 80%;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  img.icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    font-size: 0.8rem;
+  }
+  h1, h2 {
+    font-size: 1.3rem;
+  }
+}
+
