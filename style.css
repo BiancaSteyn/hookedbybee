@@ -49,6 +49,11 @@ nav a:hover {
   border-bottom: 4px solid var(--yellow);
 }
 
+.banner {
+  background-position: 50% 20%;
+}
+
+
 /* Buttons below banner */
 .page-buttons {
   text-align: center;
