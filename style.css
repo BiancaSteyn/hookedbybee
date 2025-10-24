@@ -533,3 +533,31 @@ Notes: {{notes}}
   }
 }
 
+/* ---------- Responsive Banner Fix ---------- */
+.banner,
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Tablet screens */
+@media (max-width: 768px) {
+  .banner,
+  .banner-image {
+    max-height: 250px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .banner,
+  .banner-image {
+    max-height: 180px;
+  }
+}
+
