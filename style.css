@@ -486,3 +486,45 @@ Notes: {{notes}}
   }
 }
 
+.banner {
+  width: 100%;
+  height: auto;
+  min-height: 200px;              /* smaller default height */
+  background-image: url("../images/banner.jpg");
+  background-size: contain;       /* or "cover" if you prefer full edge */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    min-height: 150px;            /* smaller banner for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    min-height: 100px;            /* smaller banner for phones */
+    background-size: contain;     /* ensures full image fits */
+  }
+}
+
+.banner-image {
+  display: block;
+  width: 100%;
+  height: auto;                   /* lets it scale naturally */
+  object-fit: contain;            /* shows full image */
+}
+
+@media (max-width: 768px) {
+  .banner-image {
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-image {
+    max-height: 180px;
+  }
+}
+
