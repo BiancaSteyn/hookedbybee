@@ -49,10 +49,6 @@ nav a:hover {
   border-bottom: 4px solid var(--yellow);
 }
 
-.banner {
-  background-position: 100% 200%;
-}
-
 
 /* Buttons below banner */
 .page-buttons {
