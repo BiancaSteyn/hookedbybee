@@ -488,7 +488,7 @@ Notes: {{notes}}
 }
 
 .banner {
-  width: 100%;
+  width: auto;
   height: auto;
   min-height: 200px;              /* smaller default height */
   background-image: url("../images/banner.jpg");
@@ -512,7 +512,7 @@ Notes: {{notes}}
 
 .banner-image {
   display: block;
-  width: 100%;
+  width: auto;
   height: auto;                   /* lets it scale naturally */
   object-fit: contain;            /* shows full image */
 }
@@ -532,7 +532,7 @@ Notes: {{notes}}
 /* ---------- Responsive Banner Fix ---------- */
 .banner,
 .banner-image {
-  width: 100%;
+  width: auto;
   height: auto;
   display: block;
   object-fit: contain;
