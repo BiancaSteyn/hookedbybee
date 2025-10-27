@@ -61,7 +61,7 @@ nav a:hover {
 .banner-image {
   width: 100%;
   height: auto;
-  max-height: 350px; /* adjust if you want it smaller/larger */
+  max-height: 500px; /* adjust if you want it smaller/larger */
   object-fit: contain; /* keeps full banner visible */
   border: none;
 }
