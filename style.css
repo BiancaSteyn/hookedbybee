@@ -50,49 +50,43 @@ nav a:hover {
 /* ===============================
    RESPONSIVE BANNER (Unified)
    =============================== */
+/* 🐝 Full-Width Responsive Banner */
 .banner-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #D8B4E2; /* soft purple */
+  width: 100vw; /* full viewport width */
   margin: 0;
   padding: 0;
+  background-color: #D8B4E2; /* soft purple */
   border-bottom: 4px solid var(--yellow);
+  overflow: hidden; /* hides scrollbars if image overflows */
 }
 
 .banner-image {
-  width: 100%;
+  width: 100%; /* ensures it stretches full width */
   height: auto;
-  max-height: 380px;
-  object-fit: contain;
   display: block;
-  border: none;
-  margin: 0 auto;
+  object-fit: cover; /* fills entire width without leaving gaps */
+  max-height: 400px; /* adjust to taste */
 }
 
-/* Tablet screens */
+/* Responsive Adjustments */
 @media (max-width: 1024px) {
   .banner-image {
     max-height: 320px;
   }
 }
 
-/* Mobile phones */
 @media (max-width: 768px) {
   .banner-image {
-    max-height: 250px;
-    padding: 0 10px;
+    max-height: 260px;
   }
 }
 
-/* Small phones */
 @media (max-width: 480px) {
   .banner-image {
-    max-height: 180px;
-    padding: 0 5px;
+    max-height: 200px;
   }
 }
+
 
 /* ===============================
    BUTTONS BELOW BANNER
