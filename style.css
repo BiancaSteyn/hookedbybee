@@ -56,7 +56,6 @@ nav a:hover {
   margin: 0;
   padding: 0;
   background-color: #D8B4E2; /* soft purple */
-  border-bottom: 4px solid var(--yellow);
   overflow: hidden; /* hides scrollbars if image overflows */
 }
 
@@ -64,7 +63,7 @@ nav a:hover {
   width: 100%; /* ensures it stretches full width */
   height: auto;
   display: block;
-  object-fit: cover; /* fills entire width without leaving gaps */
+  object-fit: contain; /* fills entire width without leaving gaps */
   max-height: 400px; /* adjust to taste */
 }
 
