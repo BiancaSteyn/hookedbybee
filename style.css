@@ -146,7 +146,7 @@ footer {
   background-image: url('../images/banner.jpg');
   background-size: cover;
   background-position: center;
-  width: auto;
+  width: 100%;
   height: auto;
   border-bottom: 4px solid var(--yellow);
 }
