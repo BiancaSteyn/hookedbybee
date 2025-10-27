@@ -48,6 +48,23 @@ nav a:hover {
   height: 1000px; /* full banner height */
   border-bottom: 4px solid var(--yellow);
 }
+/* Banner Styling */
+.banner-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #D8B4E2; /* soft purple to match theme */
+  padding: 0;
+  margin: 0;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  max-height: 350px; /* adjust if you want it smaller/larger */
+  object-fit: contain; /* keeps full banner visible */
+  border: none;
+}
 
 
 /* Buttons below banner */
