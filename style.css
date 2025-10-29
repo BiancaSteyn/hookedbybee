@@ -63,8 +63,8 @@ nav a:hover {
   width: 100%; /* ensures it stretches full width */
   height: auto;
   display: block;
-  object-fit: contain; /* fills entire width without leaving gaps */
-  max-height: 400px; /* adjust to taste */
+  object-fit: cover; 
+  max-height: 200px; /* adjust to taste */
 }
 
 /* Responsive Adjustments */
