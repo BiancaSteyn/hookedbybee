@@ -60,7 +60,7 @@ nav a:hover {
 }
 
 /* Banner — fits image neatly without zooming */
-.banner, .banner-image {
+.banner-image {
   width: 100%;
   height: auto;
   min-height: 350px; /* Adjust this to make it taller or shorter */
