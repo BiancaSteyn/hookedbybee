@@ -60,11 +60,11 @@ nav a:hover {
 }
 
 .banner-image {
-  width: 100%; /* ensures it stretches full width */
+  width: 80%; /* ensures it stretches full width */
   height: auto;
   display: block;
   object-fit: cover; 
-  max-height: 800px; /* adjust to taste */
+  max-height: 500px; /* adjust to taste */
 }
 
 /* Responsive Adjustments */
