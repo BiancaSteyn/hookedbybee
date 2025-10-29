@@ -59,12 +59,16 @@ nav a:hover {
   overflow: hidden; /* hides scrollbars if image overflows */
 }
 
-.banner-image {
-  width: 100%; /* ensures it stretches full width */
-  height: 20%;
-  display: block;
-  object-fit: cover; 
-  max-height: 500px; /* adjust to taste */
+/* Banner — fits image neatly without zooming */
+.banner, .banner-image {
+  width: 100%;
+  height: auto;
+  min-height: 350px; /* Adjust this to make it taller or shorter */
+  background-image: url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain; /* Show the full banner without cropping */
+  background-color: #d8b4e2; /* soft purple background behind banner */
 }
 
 /* Responsive Adjustments */
